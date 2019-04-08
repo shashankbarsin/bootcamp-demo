@@ -9,10 +9,7 @@ variables:
 
 steps:
 - task: Docker@2
-  inputs:
-    containerRegistry: dockerHub
-    command: login
-- task: Docker@2
+  displayName: Build and push image
   inputs:
     containerRegistry: dockerHub
     repository: $(imageName)
