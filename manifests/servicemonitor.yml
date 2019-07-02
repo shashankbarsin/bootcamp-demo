@@ -3,7 +3,7 @@ kind: ServiceMonitor
 metadata:
   name: bootcamp-demo
   labels:
-    release: mothy-koala
+    release: bootcamp-demo
 spec:
   selector:
     matchLabels:

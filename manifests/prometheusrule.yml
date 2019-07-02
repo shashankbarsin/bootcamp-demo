@@ -4,7 +4,7 @@ metadata:
   name: rate-1m-requests-total
   labels:
     app: prometheus-operator
-    release: mothy-koala
+    release: bootcamp-demo
 spec:
   groups:
   - name: bootcamp-demo
