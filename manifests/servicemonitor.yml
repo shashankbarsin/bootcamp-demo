@@ -1,0 +1,12 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: bootcamp-demo
+  labels:
+    release: mothy-koala
+spec:
+  selector:
+    matchLabels:
+      app: bootcamp-demo
+  endpoints:
+  - port: metrics

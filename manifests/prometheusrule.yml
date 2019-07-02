@@ -1,0 +1,13 @@
+apiVersion: monitoring.coreos.com/v1
+kind: PrometheusRule
+metadata:
+  name: rate-1m-requests-total
+  labels:
+    app: prometheus-operator
+    release: mothy-koala
+spec:
+  groups:
+  - name: bootcamp-demo
+    rules:
+    - record: rate1m_requests_total
+      expr: rate(requests_total[1m])
