@@ -5,7 +5,7 @@ pool:
   vmImage: 'Ubuntu-16.04'
 
 variables:
-  imageName: 'shashankbarsin/bootcamp-demo'
+  imageName: 'shashankbarsin/azure-pipelines-k8s-canary'
 
 steps:
 - task: Docker@2
