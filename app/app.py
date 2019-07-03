@@ -10,7 +10,7 @@ c = Counter('requests', 'Number of requests served, by custom_status', ['custom_
 
 @app.route('/')
 def hello():
-    if randrange(1, 100) > 5:
+    if randrange(1, 100) > 15:
         c.labels(custom_status = 'bad').inc()
         return "Internal Server Error\n", 500
     else:
